@@ -1,0 +1,49 @@
+{
+    "name":"cliffparnitzky/contao-form-fieldset-duplication-to-leads",
+    "description":"Stores the duplicated data into leads.",
+    "keywords":["contao", "form", "duplication", "leads"],
+    "type":"contao-bundle",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+      {
+        "name":"Cliff Parnitzky",
+        "email":"contao@cliff-parnitzky.de",
+        "role":"Developer"
+      }
+    ],
+    "support":{
+      "email":"contao@cliff-parnitzky.de",
+      "issues":"https://github.com/cliffparnitzky/contao-form-fieldset-duplication-to-leads/issues",
+      "source":"https://github.com/cliffparnitzky/contao-form-fieldset-duplication-to-leads"
+    },
+    "require":{
+        "php": ">=7.3",
+        "contao/core-bundle":"~4.9",
+        "terminal42/contao-leads":"~1.4",
+        "inspiredminds/contao-fieldset-duplication":"~1.1"
+    },
+    "require-dev": {
+         "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CliffParnitzky\\FormFieldsetDuplicationToLeadsBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/"
+        ]
+    },
+    "extra":{
+        "contao-manager-plugin": "CliffParnitzky\\FormFieldsetDuplicationToLeadsBundle\\ContaoManager\\Plugin",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
