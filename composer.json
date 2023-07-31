@@ -20,7 +20,7 @@
         "php": ">=7.3",
         "contao/core-bundle":"~4.9",
         "terminal42/contao-leads":"~1.4",
-        "inspiredminds/contao-fieldset-duplication":"~1.1"
+        "inspiredminds/contao-fieldset-duplication":"~1.1||~2.0"
     },
     "require-dev": {
          "contao/manager-plugin": "^2.0"
